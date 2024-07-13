@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi amol</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #E6E6FA, #D8BFD8);
+            font-family: Arial, sans-serif;
+        }
+        #image-container {
+            display: none;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #8A2BE2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showImage()">Mostrar Imagen</button>
+    <div id="image-container">
+        <img src="C:\Users\Hogar\Pictures\Screenshots\Captura de pantalla (431).png" alt="Imagen">
+    </div>
+
+    <script>
+        function showImage() {
+            document.getElementById('image-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
